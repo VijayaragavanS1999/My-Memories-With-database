@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <%- include('./common/header'); -%>
+    <div class="homeContainer">
+      <h1 class="homeTitle">Compose</h1>
+      <!-- Create form to transfer the event to app  -->
+      <form action="/compose" method="post">  
+        <div class="composeContainer">
+          <h2 class="homeSubTitle">Title</h2>
+          <input
+          class="composeTitleinput form-control me-2"
+          type="search"
+          name="composeTitle"
+          placeholder="What is the title ?"
+          aria-label="Search"
+          />
+          <h2 class="homeSubTitle">Post</h2>
+          <input
+          class="composePostinput form-control me-2"
+          type="search"
+          name="composePost"
+          placeholder="Write Something..."
+          aria-label="Search"
+          />
+          <button class="composeBtn btn btn-outline-success" type="submit">Publish</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
